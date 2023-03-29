@@ -300,3 +300,15 @@
   .fa-instagram{
     font-size: 30px;
   }
+
+  #brand{
+
+    .brand-slider{
+        img{
+            height: 10rem;
+            width:15rem;
+            margin:4rem auto;
+        }
+    }
+  }
+  

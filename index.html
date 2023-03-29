@@ -19,6 +19,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- font links -->
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Swiper CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="	https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    
 </head>
 <body>
     
@@ -67,7 +76,6 @@
                   Category
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: white;"> 
-                  <li><a class="dropdown-item" href="#">Food Items</a></li>
                   <li><a class="dropdown-item" href="#" >Books</a></li>
                   <li><a class="dropdown-item" href="#" >Frangrances</a></li>
                   <li><a class="dropdown-item" href="#" >Fresh</a></li>
@@ -90,8 +98,16 @@
               <!-- <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button> -->
             </form>
             <button id="btn-login" height="50px"><a href="login1.html">Login</a></button>
-            <button id="btn-signup" height="60px"><a href="signup1.html">Sign Up</a></button>
-          </div>
+            <button id="btn-signup" height="60px"><a href="signup1.html">Sign Up</a></button>&nbsp;
+            <div class="shopping">
+              <div class="mb">
+                <button type="button" class="btn btn-outline-success" style="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                    </svg>
+                </button>
+            </div>
+            </div>
         </div>
       </nav>
     <!-- navbar -->
@@ -119,16 +135,7 @@
                 <img src="./image/img3.png" class="d-block w-100" alt="..." >
               </div>
               <!-- <div class="carousel-item">
-                <img src="./image/vanja-matijevic-3n1QVNxf8hs-unsplash.jpg" class="d-block w-100" alt="..." height="500" width="3000">
-              </div>
-              <div class="carousel-item">
-                <img src="./image/promocode-130218-perfumesdirect_banner.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./image/2.png" class="d-block w-100" alt="..." >
-              </div>
-              <div class="carousel-item">
-                <img src="./image/3.png" class="d-block w-100" alt="..." >
+                <img src="./image/background.png" class="d-block w-100" alt="..." >
               </div> -->
             </div>
           </div>
@@ -136,19 +143,14 @@
     </div>
 </section>
 <!-- Home Section -->
+
+<div class="card">
+  <ul class="listcard"></ul>
+  <div class="checkout"></div>
 </div>
 
 
 <!-- top cards -->
-<!-- <div class="card" style="width: 18rem;">
-    <img src="./image/topcard1.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Sonata Watch</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Add to Cart</a>
-      <a href="#" class="btn btn-primary">Buy Now</a>
-    </div>
-  </div> -->
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
@@ -175,8 +177,18 @@
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
             </h4></p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-      <a href="#" class="btn btn-primary">Buy Now</a>
+            <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+      <a href="#" class="btn btn-primary">Buy Now</a> -->
+      <button type="button" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+       <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg>&nbsp;Add to Cart </button>
+      <button type="button" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+        Buy Now
+      </button>
           </div>
         </div>
       </div>
@@ -194,8 +206,18 @@
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
             </h4></p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-      <a href="#" class="btn btn-primary">Buy Now</a>
+            <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+      <a href="#" class="btn btn-primary">Buy Now</a> -->
+      <button type="button" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+       <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg>&nbsp;Add to Cart </button>
+      <button type="button" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+        Buy Now
+      </button>
           </div>
         </div>
       </div>
@@ -213,8 +235,18 @@
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
             </h4></p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-      <a href="#" class="btn btn-primary">Buy Now</a>
+            <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+      <a href="#" class="btn btn-primary">Buy Now</a> -->
+      <button type="button" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+       <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg>&nbsp;Add to Cart </button>
+      <button type="button" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+        Buy Now
+      </button>
           </div>
         </div>
       </div>
@@ -229,8 +261,8 @@
     </div>
 </div>
 <!-- banner -->
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+    <!-- <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col">
         <div class="card h-100">
           <div class="zoom">
@@ -255,10 +287,10 @@
       <div class="col">
         <div class="card h-100">
           <div class="zoom">
-            <img src="./image/p6.png" class="card-img-top" alt="..." height="300px">
+            <img src="./image/sportsmax shoes.jpg" class="card-img-top" alt="..." height="300px">
           </div>
           <div class="card-body">
-            <h5 class="card-title"><b>SportsMax Blue Shoes for Men</b></h5>
+            <h5 class="card-title"><b></b></h5>
             <p class="card-text"><h4><b>Rs.2,999/-</b></h4></p>
               <p class="card-text"><h4>
               <b>Rating:</b>
@@ -277,9 +309,9 @@
         <div class="card h-100">
           <div class="zoom"><img src="./image/p15.png" class="card-img-top" alt="..."></div>
           <div class="card-body">
-            <h5 class="card-title"><b>Addidas Men's Sports Shoes</b></h5>&nbsp;
-            <p class="card-text"><h4><b>Rs.1,800/-</b></h4></p>
-<p class="card-text"><h4>
+            <h5 class="card-title"><b></b></h5>&nbsp;
+            <p class="card-text"><h4></h4></p>
+              <p class="card-text"><h4>
               <b>Rating:</b>
               <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -296,24 +328,276 @@
         <div class="card h-100">
           <div class="zoom"><img src="./image/vanja-matijevic-3n1QVNxf8hs-unsplash.jpg" class="card-img-top" alt="..." height="300px"></div>
           <div class="card-body">
-            <h5 class="card-title"><b>Puma's Lace up Shoes for Men and Women </b></h5>
-            <p class="card-text"><h4><b>Rs.1,600/-</b></h4></p>
-<p class="card-text"><h4>
-              <b>Rating:</b>
-              <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            </h4></p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-            <a href="#" class="btn btn-primary">Buy Now</a>
+            <h5 class="card-title"><b> for Men and Women </b></h5>
+            <p class="card-text"><h4></h4></p>
+
           </div>
         </div>
       </div>
     </div>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+     -->
+    
+
+    <section class="pt-5 pb-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <h3 class="mb-3">Shoes</h3>
+              </div>
+              <div class="col-6 text-right">
+                  <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                      <i class="fa fa-arrow-left"></i>
+                  </a>
+                  <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                      <i class="fa fa-arrow-right"></i>
+                  </a>
+              </div>
+              <div class="col-12">
+                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+  
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="row">
+  
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/puma red.jpg" height="300px">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Puma Black Shoes</h4>
+                                              <p class="card-text"><b>Rs.4,999/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/ye.jpg" height="280px">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">SportsMax Blue Shoes</h4>
+                                              <p class="card-text"><b>Rs.2,999/-</b></p>
+                                              <p class="card-text"><h4>
+                                                  <b>Rating:</b>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star"></span>
+                                                      <span class="fa fa-star"></span>
+                                                           </h4></p>
+                                                      <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                    <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                                    <button type="button" class="btn btn-primary">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                                    </svg>&nbsp;Add to Cart </button>
+                                                    <button type="button" class="btn btn-primary">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                        </svg>
+                                                      Buy Now
+                                                    </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/grey shoes.jpg" height="280px">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Addidas Men's Sports Shoes</h4>
+                                              <p class="card-text"><b>Rs.1,800/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row">
+  
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/formal.jpg">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Formal Shoes</h4>
+                                              <p class="card-text"><b>Rs.1,600/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/boot 4.jpg">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Addidas Brown shoes</h4>
+                                              <p class="card-text"><b>Rs.1,700/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/boot 5.jpg">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Red Chiff Brown Shoes</h4>
+                                              <p class="card-text"><b>Rs.3,500/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                          <!--<div class="carousel-item">
+                              <div class="row">
+  
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Special title treatment</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Special title treatment</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Special title treatment</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                          </div>
+                                      </div>
+                                  </div> 
+                              </div>
+                          </div>
+                      </div>-->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col">
         <div class="card h-100">
           <div class="zoom"><img src="./image/p20.png" class="card-img-top" alt="..." height="300px"></div>
@@ -390,10 +674,269 @@
           </div>
         </div>
       </div>
-    </div>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div> -->
+    
+    <section class="pt-5 pb-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <h3 class="mb-3">T-shirts </h3>
+              </div>
+              <div class="col-6 text-right">
+                  <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                      <i class="fa fa-arrow-left"></i>
+                  </a>
+                  <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators3" role="button" data-slide="next">
+                      <i class="fa fa-arrow-right"></i>
+                  </a>
+              </div>
+              <div class="col-12">
+                  <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+  
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="row">
+  
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/tshirt-1.jpg" height="300px">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">White Printed Tshirt for Men</h4>
+                                              <p class="card-text"><b>Rs.499/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/tshirt-2.jpg" height="280px">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Grey Tshirt for Men</h4>
+                                              <p class="card-text"><b>Rs.399/-</b></p>
+                                              <p class="card-text"><h4>
+                                                  <b>Rating:</b>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star"></span>
+                                                      <span class="fa fa-star"></span>
+                                                           </h4></p>
+                                                      <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                    <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                                    <button type="button" class="btn btn-primary">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                                    </svg>&nbsp;Add to Cart </button>
+                                                    <button type="button" class="btn btn-primary">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                        </svg>
+                                                      Buy Now
+                                                    </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/tshirt-3.jpg" height="280px">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">White Formal Tshirt for men</h4>
+                                              <p class="card-text"><b>Rs.800/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row">
+  
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/tshirt-4.jpg">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Light Blue Tshirt for Men</h4>
+                                              <p class="card-text"><b>Rs.600/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/tshirt-5.jpg">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Cherry Tshirt for Men</h4>
+                                              <p class="card-text"><b>Rs.300/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/tshirt-6.jpg">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Blue Printed Tshirt for Men</h4>
+                                              <p class="card-text"><b>Rs.800/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                          <!--<div class="carousel-item">
+                              <div class="row">
+  
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Special title treatment</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Special title treatment</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Special title treatment</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                          </div>
+                                      </div>
+                                  </div> 
+                              </div>
+                          </div>
+                      </div>-->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+  
+    <!-- <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col">
         <div class="card h-100">
           <div class="zoom"><img src="./image/p11.jpg" class="card-img-top" alt="..." height="300px"></div>
@@ -473,10 +1016,268 @@
           </div>
         </div>
       </div>
-    </div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div> -->
 
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+    <section class="pt-5 pb-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <h3 class="mb-3">Jackets </h3>
+              </div>
+              <div class="col-6 text-right">
+                  <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                      <i class="fa fa-arrow-left"></i>
+                  </a>
+                  <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators4" role="button" data-slide="next">
+                      <i class="fa fa-arrow-right"></i>
+                  </a>
+              </div>
+              <div class="col-12">
+                  <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+  
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="row">
+  
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/calvin klein jacket.jpg" height="300px">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">calvin Klein Blue Men's Jacket</h4>
+                                              <p class="card-text"><b>Rs.1,299/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/jacket green.jpg" height="280px">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Green Jacket for Men</h4>
+                                              <p class="card-text"><b>Rs.1,999/-</b></p>
+                                              <p class="card-text"><h4>
+                                                  <b>Rating:</b>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star checked"></span>
+                                                      <span class="fa fa-star"></span>
+                                                      <span class="fa fa-star"></span>
+                                                           </h4></p>
+                                                      <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                    <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                                    <button type="button" class="btn btn-primary">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                                    </svg>&nbsp;Add to Cart </button>
+                                                    <button type="button" class="btn btn-primary">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                        </svg>
+                                                      Buy Now
+                                                    </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/black jacket.jpg" height="280px">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Black Jacket for Men</h4>
+                                              <p class="card-text"><b>Rs.999/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row">
+  
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card h-100">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/denim jacket.jpg">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Denim Jacket for Men</h4>
+                                              <p class="card-text"><b>Rs.1,800/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/winter jacket.jpg">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Winter Jacket for Men</h4>
+                                              <p class="card-text"><b>Rs.2,999/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <div class="zoom">
+                                            <img class="img-fluid" alt="100%x280" src="./image/green jacket-2.jpg">
+                                          </div>
+                                          <div class="card-body">
+                                              <h4 class="card-title">Swanky Green Jacket for Men</h4>
+                                              <p class="card-text"><b>Rs.1,700/-</b></p>
+                                              <p class="card-text"><h4>
+                                                <b>Rating:</b>
+                                                <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star checked"></span>
+                                              <span class="fa fa-star"></span>
+                                              <span class="fa fa-star"></span>
+                                              </h4></p>
+                                              <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                              <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                              </svg>&nbsp;Add to Cart </button>
+                                              <button type="button" class="btn btn-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                  </svg>
+                                                Buy Now
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                          <!--<div class="carousel-item">
+                              <div class="row">
+  
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Special title treatment</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Special title treatment</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Special title treatment</h4>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                          </div>
+                                      </div>
+                                  </div> 
+                              </div>
+                          </div>
+                      </div>-->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col">
         <div class="card h-100">
           <div class="zoom"> <img src="./image/perfume1.avif" class="card-img-top" alt="..." height="300px"></div>
@@ -554,11 +1355,281 @@
         </div>
       </div>
     </div>
+ -->
+
+ <!-- brand section  -->
+
+<!-- <div id="brand">
+  <div class="brand-slider owl-carousel owl-theme">
+    <img src="./image/brand-1.png" alt="" class="item">
+    <img src="./image/brand-2.jpg" alt="" class="item">
+    <img src="./image/brand-3.jpg" alt="" class="item">
+    <img src="./image/brand-4.jpg" alt="" class="item">
+    <img src="./image/brand-5.jpg" alt="" class="item">
+  </div>
+</div> -->
+<!--brand section-->
 
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <section class="pt-5 pb-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-6">
+              <h3 class="mb-3">Perfumes</h3>
+          </div>
+          <div class="col-6 text-right">
+              <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+              </a>
+              <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators5" role="button" data-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+              </a>
+          </div>
+          <div class="col-12">
+              <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
 
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
+
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/perfume-1.jpg" height="300px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Cool France Perfume</h4>
+                                          <p class="card-text"><b>Rs.999/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/perfume-2.jpg" height="280px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">London Quartz perfumes</h4>
+                                          <p class="card-text"><b>Rs.899/-</b></p>
+                                          <p class="card-text"><h4>
+                                              <b>Rating:</b>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star"></span>
+                                                  <span class="fa fa-star"></span>
+                                                       </h4></p>
+                                                  <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                                <button type="button" class="btn btn-primary">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                                </svg>&nbsp;Add to Cart </button>
+                                                <button type="button" class="btn btn-primary">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                    </svg>
+                                                  Buy Now
+                                                </button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/perfume-3.jpg" height="280px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Lover Joy Perfume for Women</h4>
+                                          <p class="card-text"><b>Rs.500/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/perfume-5.jpg" height="300px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Vera Wang Perfume for Men</h4>
+                                          <p class="card-text"><b>Rs.1,200/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/perfume-6.jpg" height="300px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Black Coco Perfume for Women</h4>
+                                          <p class="card-text"><b>Rs.1,999/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/perfume-4.jpg">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Boss Italy perfume</h4>
+                                          <p class="card-text"><b>Rs.3,000/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+                      <!--<div class="carousel-item">
+                          <div class="row">
+
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                      </div>
+                                  </div>
+                              </div> 
+                          </div>
+                      </div>
+                  </div>-->
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+    <!-- <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col">
         <div class="card h-100">
           <div class="zoom"><img src="./image/beauty -1.avif" class="card-img-top" alt="..." height="300px"></div>
@@ -635,92 +1706,268 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+ <section class="pt-5 pb-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-6">
+              <h3 class="mb-3">Beauty Items</h3>
+          </div>
+          <div class="col-6 text-right">
+              <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+              </a>
+              <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators6" role="button" data-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+              </a>
+          </div>
+          <div class="col-12">
+              <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
 
-    <div class="row row-cols-1 row-cols-md-4 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <div class="zoom"><img src="./image/chips.avif" class="card-img-top" alt="..." height="300px"></div>
-          <div class="card-body">
-            <h5 class="card-title"><b>FrenchFries</b></h5>&nbsp;
-            <p class="card-text"><h4><b>Rs.120/-</b></h4></p>
-<p class="card-text"><h4>
-              <b>Rating:</b>
-              <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            </h4></p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="zoom"><img src="./image/pizza.avif" class="card-img-top" alt="..." height="300px"></div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Veg Cheese Margreta large pizza</b></h5>
-            <p class="card-text"><h4><b>Rs.99/-</b></h4></p>
-<p class="card-text"><h4>
-              <b>Rating:</b>
-              <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            </h4></p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="zoom"><img src="./image/food-1.avif" class="card-img-top" alt="..." height="300px"></div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Veg Cheese Burger with ColdDrink</b></h5>
-            <p class="card-text"><h4><b>Rs.200/-</b></h4></p>
-<p class="card-text"><h4>
-              <b>Rating:</b>
-              <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            </h4></p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="zoom"><img src="./image/sandwitch.avif" class="card-img-top" alt="..." height="300px"></div>
-          <div class="card-body">
-            <h5 class="card-title"><b>Veg Club Sandwitch with ColdDrink</b></h5>
-            <p class="card-text"><h4><b>Rs.500/-</b></h4></p>
-<p class="card-text"><h4>
-              <b>Rating:</b>
-              <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            </h4></p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/beauty-1" height="300px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Wow Beauty products</h4>
+                                          <p class="card-text"><b>Rs.3,999/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/mamaearth.jpeg" height="280px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">MamaEarth beauty products</h4>
+                                          <p class="card-text"><b>Rs.2,999/-</b></p>
+                                          <p class="card-text"><h4>
+                                              <b>Rating:</b>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star"></span>
+                                                  <span class="fa fa-star"></span>
+                                                       </h4></p>
+                                                  <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                                <button type="button" class="btn btn-primary">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                                </svg>&nbsp;Add to Cart </button>
+                                                <button type="button" class="btn btn-primary">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                    </svg>
+                                                  Buy Now
+                                                </button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/joy" height="280px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Joy Beauty products</h4>
+                                          <p class="card-text"><b>Rs.1,200/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
 
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/beauty-4.avif" height="300px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Biotique Beauty products</h4>
+                                          <p class="card-text"><b>Rs.4,999/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/beauty-5">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Patanjali Beauty products</h4>
+                                          <p class="card-text"><b>Rs.999/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/beauty-6">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">LakeMe beauty products</h4>
+                                          <p class="card-text"><b>Rs.5,999/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+                      <!--<div class="carousel-item">
+                          <div class="row">
+
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                      </div>
+                                  </div>
+                              </div> 
+                          </div>
+                      </div>
+                  </div>-->
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+    <!-- <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col">
         <div class="card h-100">
           <div class="zoom"> <img src="./image/home-1.avif" class="card-img-top" alt="..." height="300px"></div>
@@ -798,7 +2045,266 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  
+ <section class="pt-5 pb-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-6">
+              <h3 class="mb-3">Electronic Items</h3>
+          </div>
+          <div class="col-6 text-right">
+              <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+              </a>
+              <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators7" role="button" data-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+              </a>
+          </div>
+          <div class="col-12">
+              <div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
+
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
+
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/c1.png" height="300px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Hp Pavilion Laptop</h4>
+                                          <p class="card-text"><b>Rs.79,999/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
+                                          <!-- <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/iphone 13 pro.png" height="300px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Iphone 13 Pro</h4>
+                                          <p class="card-text"><b>Rs.1,15,000/-</b></p>
+                                          <p class="card-text"><h4>
+                                              <b>Rating:</b>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star"></span>
+                                                  <span class="fa fa-star"></span>
+                                                       </h4></p>
+                                                  <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                                <button type="button" class="btn btn-primary">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                                </svg>&nbsp;Add to Cart </button>
+                                                <button type="button" class="btn btn-primary">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                                    </svg>
+                                                  Buy Now
+                                                </button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/w1.png" height="300px">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Noise Fitpro Smart Watch</h4>
+                                          <p class="card-text"><b>Rs.2,999/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/pr6.png">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">LG Fridge 15L</h4>
+                                          <p class="card-text"><b>Rs.35,000/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/pr1.png">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Whirlpool Washing Machine</h4>
+                                          <p class="card-text"><b>Rs.19,999/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card h-100">
+                                      <div class="zoom">
+                                        <img class="img-fluid" alt="100%x280" src="./image/pr8.png">
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-title">Panasonic Tv 32 Inch</h4>
+                                          <p class="card-text"><b>Rs.39,999/-</b></p>
+                                          <p class="card-text"><h4>
+                                            <b>Rating:</b>
+                                            <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          </h4></p>
+                                          <!-- <a href="#" class="btn btn-primary">Add to Cart</a>
+                                          <a href="#" class="btn btn-primary">Buy Now</a> -->
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 2 16 16">
+                                           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                          </svg>&nbsp;Add to Cart </button>
+                                          <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 2 16 16">
+                                              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                              </svg>
+                                            Buy Now
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+                      <!--<div class="carousel-item">
+                          <div class="row">
+
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                      </div>
+                                  </div>
+                              </div> 
+                          </div>
+                      </div>
+                  </div>-->
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
   
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -822,8 +2328,36 @@
     </div>
   </footer>
 
-
-  
+  <!-- <script>
+    $('.brand-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    items:4,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        400:{
+            items:2
+        },
+        550:{
+            items:3
+        }
+        1000:{
+          items:4
+        }
+    }
+})
+  </script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+  <script src="javas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
